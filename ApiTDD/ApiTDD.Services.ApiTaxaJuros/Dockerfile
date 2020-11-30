@@ -5,7 +5,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["ApiTDD.Services.ApiTaxaJuros/ApiTDD.Services.ApiTaxaJuros.csproj", "ApiTDD.Services.ApiTaxaJuros/"]
+COPY ["ApiTDD.Services.ApiTaxaJuros.csproj", "ApiTDD.Services.ApiTaxaJuros/"]
 RUN dotnet restore "ApiTDD.Services.ApiTaxaJuros/ApiTDD.Services.ApiTaxaJuros.csproj"
 COPY . .
 WORKDIR "/src/ApiTDD.Services.ApiTaxaJuros"

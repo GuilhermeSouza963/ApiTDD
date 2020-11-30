@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace ApiTDD.Services.ApiCalculaJuros.Controllers
 {
@@ -12,10 +15,25 @@ namespace ApiTDD.Services.ApiCalculaJuros.Controllers
         {
             try
             {
-                var taxaJuros = 0.01;
-                decimal valorFinal = valorInicial * (decimal)Math.Pow((1 + taxaJuros), meses);
+                using(var client = new HttpClient())
+                {
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(
+                        new MediaTypeWithQualityHeaderValue("application/json"));
 
-                return await Task.FromResult(Math.Round(valorFinal, 2));
+                    HttpResponseMessage response = client.GetAsync("http://localhost:54937/taxajuros").Result;
+
+                    response.EnsureSuccessStatusCode();
+
+                    string conteudo = response.Content.ReadAsStringAsync().Result;
+
+                    var taxaJuros = JsonConvert.DeserializeObject<double>(conteudo);
+
+                    decimal valorFinal = valorInicial * (decimal)Math.Pow((1 + taxaJuros), meses);
+
+                    return await Task.FromResult(Math.Round(valorFinal, 2));
+                }
+           
             }
             catch (Exception ex)
             {

@@ -5,15 +5,15 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{5C1F861D-8889-430E-9CC7-0FC2AAB57A92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiTDD.Services.ApiTaxaJuros", "ApiTDD.Services.ApiTaxaJuros\ApiTDD.Services.ApiTaxaJuros.csproj", "{DA9F22AA-DE89-4E12-8BDE-B185A73BFFF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiTDD.Services.ApiTaxaJuros", "ApiTDD.Services.ApiTaxaJuros\ApiTDD.Services.ApiTaxaJuros.csproj", "{DA9F22AA-DE89-4E12-8BDE-B185A73BFFF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiTDD.Services.ApiCalculaJuros", "ApiTDD.Services.ApiCalculaJuros\ApiTDD.Services.ApiCalculaJuros.csproj", "{FD468322-FC86-445B-BEEB-59C6F9A6173F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiTDD.Services.ApiCalculaJuros", "ApiTDD.Services.ApiCalculaJuros\ApiTDD.Services.ApiCalculaJuros.csproj", "{FD468322-FC86-445B-BEEB-59C6F9A6173F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Tests", "2 - Tests", "{F71104F1-88F9-445B-AB89-01D193E0FF8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiTDD.Tests.ApiCalculaJurosTest", "ApiTDD.Tests.ApiCalculaJurosTest\ApiTDD.Tests.ApiCalculaJurosTest.csproj", "{DF5D8410-3E47-4D7E-8B81-1A4F1883848D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiTDD.Tests.ApiCalculaJurosTest", "ApiTDD.Tests.ApiCalculaJurosTest\ApiTDD.Tests.ApiCalculaJurosTest.csproj", "{DF5D8410-3E47-4D7E-8B81-1A4F1883848D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiTDD.Tests.ApiTaxaJurosTest", "ApiTDD.Tests.ApiTaxaJurosTest\ApiTDD.Tests.ApiTaxaJurosTest.csproj", "{059CBA5F-A1D6-44C9-B4F0-2352D4B73830}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiTDD.Tests.ApiTaxaJurosTest", "ApiTDD.Tests.ApiTaxaJurosTest\ApiTDD.Tests.ApiTaxaJurosTest.csproj", "{059CBA5F-A1D6-44C9-B4F0-2352D4B73830}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
