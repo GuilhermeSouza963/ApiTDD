@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\_Git\\ApiTDD\\ApiTDD\\ApiTDD.Tests.ApiTaxaJurosTest\\ApiTDD.Tests.ApiTaxaJurosTest.csproj": {}
+    "D:\\Projetos\\_git\\ApiTDD\\ApiTDD\\ApiTDD.Tests.ApiTaxaJurosTest\\ApiTDD.Tests.ApiTaxaJurosTest.csproj": {}
   },
   "projects": {
-    "D:\\_Git\\ApiTDD\\ApiTDD\\ApiTDD.Tests.ApiTaxaJurosTest\\ApiTDD.Tests.ApiTaxaJurosTest.csproj": {
+    "D:\\Projetos\\_git\\ApiTDD\\ApiTDD\\ApiTDD.Services.ApiTaxaJuros\\ApiTDD.Services.ApiTaxaJuros.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Git\\ApiTDD\\ApiTDD\\ApiTDD.Tests.ApiTaxaJurosTest\\ApiTDD.Tests.ApiTaxaJurosTest.csproj",
-        "projectName": "ApiTDD.Tests.ApiTaxaJurosTest",
-        "projectPath": "D:\\_Git\\ApiTDD\\ApiTDD\\ApiTDD.Tests.ApiTaxaJurosTest\\ApiTDD.Tests.ApiTaxaJurosTest.csproj",
-        "packagesPath": "C:\\Users\\guilhermepereira\\.nuget\\packages\\",
-        "outputPath": "D:\\_Git\\ApiTDD\\ApiTDD\\ApiTDD.Tests.ApiTaxaJurosTest\\obj\\",
+        "projectUniqueName": "D:\\Projetos\\_git\\ApiTDD\\ApiTDD\\ApiTDD.Services.ApiTaxaJuros\\ApiTDD.Services.ApiTaxaJuros.csproj",
+        "projectName": "ApiTDD.Services.ApiTaxaJuros",
+        "projectPath": "D:\\Projetos\\_git\\ApiTDD\\ApiTDD\\ApiTDD.Services.ApiTaxaJuros\\ApiTDD.Services.ApiTaxaJuros.csproj",
+        "packagesPath": "C:\\Users\\Guilherme Souza\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos\\_git\\ApiTDD\\ApiTDD\\ApiTDD.Services.ApiTaxaJuros\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\guilhermepereira\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Guilherme Souza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -43,17 +41,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.NET.Test.Sdk": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
-              "version": "[16.4.0, )"
+              "version": "[1.9.10, )"
             },
-            "NUnit3TestAdapter": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.15.1, )"
+              "version": "[3.1.4, )"
             },
-            "nunit": {
+            "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[3.12.0, )"
+              "version": "[5.6.3, )"
             }
           },
           "imports": [
@@ -66,12 +64,111 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projetos\\_git\\ApiTDD\\ApiTDD\\ApiTDD.Tests.ApiTaxaJurosTest\\ApiTDD.Tests.ApiTaxaJurosTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projetos\\_git\\ApiTDD\\ApiTDD\\ApiTDD.Tests.ApiTaxaJurosTest\\ApiTDD.Tests.ApiTaxaJurosTest.csproj",
+        "projectName": "ApiTDD.Tests.ApiTaxaJurosTest",
+        "projectPath": "D:\\Projetos\\_git\\ApiTDD\\ApiTDD\\ApiTDD.Tests.ApiTaxaJurosTest\\ApiTDD.Tests.ApiTaxaJurosTest.csproj",
+        "packagesPath": "C:\\Users\\Guilherme Souza\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos\\_git\\ApiTDD\\ApiTDD\\ApiTDD.Tests.ApiTaxaJurosTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Guilherme Souza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Projetos\\_git\\ApiTDD\\ApiTDD\\ApiTDD.Services.ApiTaxaJuros\\ApiTDD.Services.ApiTaxaJuros.csproj": {
+                "projectPath": "D:\\Projetos\\_git\\ApiTDD\\ApiTDD\\ApiTDD.Services.ApiTaxaJuros\\ApiTDD.Services.ApiTaxaJuros.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.TestHost": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

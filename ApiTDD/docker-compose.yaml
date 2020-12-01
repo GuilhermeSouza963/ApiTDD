@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  apicalculajuros:
+    image: apicalculajuros
+    build:
+      context: ApiTDD.Services.ApiCalculaJuros
+      dockerfile: Dockerfile
+    ports:
+      - "20000:80"
+    networks:
+      - api-network
+
+  apitaxajuros:
+    image: apitaxajuros
+    build:
+      context: ApiTDD.Services.ApiTaxaJuros
+      dockerfile: Dockerfile
+    ports:
+      - "20001:80"
+    networks:
+      - api-network
+
+networks: 
+    api-network:
+        driver: bridge

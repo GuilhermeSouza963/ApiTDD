@@ -21,7 +21,10 @@ namespace ApiTDD.Services.ApiCalculaJuros.Controllers
                     client.DefaultRequestHeaders.Accept.Add(
                         new MediaTypeWithQualityHeaderValue("application/json"));
 
+                    //Porta IIS
                     HttpResponseMessage response = client.GetAsync("http://localhost:54937/taxajuros").Result;
+                    //Porta Docker
+                    //HttpResponseMessage response = client.GetAsync("http://localhost:20003/taxajuros").Result;
 
                     response.EnsureSuccessStatusCode();
 
